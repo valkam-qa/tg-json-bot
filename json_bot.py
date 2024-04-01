@@ -2,7 +2,7 @@
 from telebot import TeleBot, types
 import json
 
-bot = TeleBot(token='ВСТАВИТЬ_СВОЙ_ТОКЕН', parse_mode='html') # создание бота
+bot = TeleBot(token='6799811205:AAHZvktKAXGhj1bGp8VZxS1pY8QY9PgejHQ', parse_mode='html') # создание бота
 
 
 # обработчик команды '/start'
@@ -11,7 +11,7 @@ def start_command_handler(message: types.Message):
     # отправляем ответ на команду '/start'
     bot.send_message(
         chat_id=message.chat.id, # id чата, в который необходимо направить сообщение
-        text='Привет! Я умею проверять JSON и форматировать его в красивый текст\nВведи JSON в виде строки:', # текст сообщения
+        text='Здравствуйте! Я люблю, когда в JSON порядочек, засылай и я сделаю его красивым:', # текст сообщения
     )
 
 # обработчик всех остальных сообщений
