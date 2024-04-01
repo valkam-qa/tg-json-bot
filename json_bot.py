@@ -1,8 +1,7 @@
-# Для подключение библиотеки telebot нужно в google colab добавить: !pip install pyTelegramBotAPI
 from telebot import TeleBot, types
 import json
 
-bot = TeleBot(token='6799811205:AAHZvktKAXGhj1bGp8VZxS1pY8QY9PgejHQ', parse_mode='html') # создание бота
+bot = TeleBot(token='здесь нужен мой токен', parse_mode='html') # создание бота
 
 
 # обработчик команды '/start'
@@ -25,7 +24,7 @@ def message_handler(message: types.Message):
         # преобразовываем исключение в строку и выводим пользователю
         bot.send_message(
             chat_id=message.chat.id,
-            text=f'При обработке произошла ошибка:\n<code>{str(ex)}</code>'
+            text=f'Я не смог с этим справиться:\n<code>{str(ex)}</code>'
         )
         # выходим из функции
         return
